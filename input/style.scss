@@ -1,0 +1,226 @@
+@import "_var.scss";
+
+.nav {
+    // SetWidthHeight(W,H)
+    @include SetWidthHeight(100%, 7vh);
+    @include SetColor($green-color, $white-color);
+
+    p {
+        padding-top: 1vh;
+        font-size: $nav-font-size;
+        text-align: center;
+    }
+}
+
+.nav2 {
+    @include SetPaddingTL(2vh, 10%);
+    @include SetWidthHeight(80%, 10vh);
+    @include SetColor($white-color, $green-color);
+    display: flex;
+
+    ul {
+        margin-left: 15%;
+        margin-top: 2vh;
+        width: 35%;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        li {
+            a {
+                @include SetTextColor($green-color);
+                font-size: $nav-font-size;
+                text-decoration: none;
+            }
+        }
+    }
+
+    button {
+        margin-left: 22%;
+        margin-top: 1vh;
+        font-style: italic;
+        font-size: $nav-font-size;
+        @include SetTextColor($green-color);
+        border-radius: 25px;
+        @include SetWidthHeight(20%, 6vh);
+        border: 1px $green-color solid;
+
+    }
+}
+
+.line {
+    width: 80%;
+    margin-left: 10%;
+    border: 0.5px $green-color solid;
+}
+
+.Body {
+    @include SetColor($white-color, $green-color);
+    @include SetWidthHeight(80%, 85vh);
+    @include SetPaddingTL(4vh, 10%);
+    margin-bottom: 6vh;
+    font-size: $nav-font-size;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+
+    .Text {
+        .HealthCare {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 90px;
+                // display: inline-block;
+            }
+
+            img {
+                width: 8%;
+            }
+        }
+
+        p {
+            width: 90%;
+        }
+
+        .Buttons {
+            @include SetPaddingTL(3vh, 10%);
+
+            .button1 {
+                font-size: $nav-font-size;
+                @include SetColor($green-color, $white-color);
+                border-radius: 25px;
+                font-style: italic;
+                @include SetWidthHeight(30%, 6vh);
+                border: 1px $green-color solid;
+            }
+
+            .button2 {
+                margin-left: 10%;
+                font-size: $nav-font-size;
+                font-style: italic;
+                @include SetTextColor($green-color);
+                border-radius: 25px;
+                @include SetWidthHeight(30%, 6vh);
+                border: 1px $green-color solid;
+
+                img {
+                    width: 15%;
+                }
+            }
+        }
+    }
+
+    .Image {
+        height: 100%;
+
+        img {
+            @include SetWidthHeight(100%, 85vh);
+            border-radius: 20px;
+        }
+    }
+}
+
+.Body2 {
+    font-size: 32px;
+    @include SetColor($green-color, $white-color);
+    padding-top: 5vh;
+    text-align: center;
+
+    p {
+        font-size: $nav-font-size;
+        margin-bottom: 2vh;
+    }
+
+    .gallery {
+        display: grid;
+        width: 80%;
+        margin-left: 10%;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .gallery-item {
+            margin-top: 8vh;
+            font-size: 25px;
+        }
+
+        .Learnmore {
+            font-size: $nav-font-size;
+        }
+    }
+}
+
+@media(max-width:700px) {
+    .nav2 {
+        #del {
+            display: none;
+        }
+
+        button {
+            display: none;
+        }
+    }
+
+    .nav2 {
+        ul {
+            margin-left: 50%;
+        }
+    }
+
+    .Body {
+        grid-template-columns: 1fr;
+
+        .Text {
+            .HealthCare {
+                h1 {
+                    font-size: 85px;
+                    // display: inline-block;
+                }
+            }
+            .Buttons {
+                @include SetPaddingTL(3vh, 0);
+                .button1 {
+                    border-radius: 25px;
+                    @include SetWidthHeight(40%, 6vh);
+                    border: 1px $green-color solid;
+                }
+                .button2 {
+                    border-radius: 25px;
+                    @include SetWidthHeight(40%, 6vh);
+                    img {
+                        width: 10%;
+                    }
+                }
+            }
+        }
+
+        .Image {
+            display: none;
+        }  
+    }
+    .Body2 {
+        font-size: 28px;
+        padding-top: 5vh;
+        p {
+            font-size: 18px;
+            margin-bottom: 2vh;
+        }
+    
+        .gallery {
+            display: grid;
+            width: 80%;
+            margin-left: 10%;
+            grid-template-columns: 1fr 1fr;
+    
+            .gallery-item {
+                 margin-top: 8vh;
+                font-size: 22px;
+            }
+    
+            .Learnmore {
+                font-size: $nav-font-size;
+            }
+        }
+    }
+    
+}
