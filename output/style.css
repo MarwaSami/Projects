@@ -1,0 +1,210 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #F2F4EA;
+}
+
+.nav {
+  width: 100%;
+  height: 7vh;
+  background-color: #1F4D36;
+  color: #F2F4EA;
+}
+.nav p {
+  padding-top: 1vh;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav2 {
+  padding-top: 2vh;
+  padding-left: 10%;
+  width: 80%;
+  height: 10vh;
+  background-color: #F2F4EA;
+  color: #1F4D36;
+  display: flex;
+}
+.nav2 ul {
+  margin-left: 15%;
+  margin-top: 2vh;
+  width: 35%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.nav2 ul li a {
+  color: #1F4D36;
+  font-size: 20px;
+  text-decoration: none;
+}
+.nav2 button {
+  margin-left: 22%;
+  margin-top: 1vh;
+  font-style: italic;
+  font-size: 20px;
+  color: #1F4D36;
+  border-radius: 25px;
+  width: 20%;
+  height: 6vh;
+  border: 1px #1F4D36 solid;
+}
+
+.line {
+  width: 80%;
+  margin-left: 10%;
+  border: 0.5px #1F4D36 solid;
+}
+
+.Body {
+  background-color: #F2F4EA;
+  color: #1F4D36;
+  width: 80%;
+  height: 85vh;
+  padding-top: 4vh;
+  padding-left: 10%;
+  margin-bottom: 6vh;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+.Body .Text .HealthCare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Body .Text .HealthCare h1 {
+  font-size: 90px;
+}
+.Body .Text .HealthCare img {
+  width: 8%;
+}
+.Body .Text p {
+  width: 90%;
+}
+.Body .Text .Buttons {
+  padding-top: 3vh;
+  padding-left: 10%;
+}
+.Body .Text .Buttons .button1 {
+  font-size: 20px;
+  background-color: #1F4D36;
+  color: #F2F4EA;
+  border-radius: 25px;
+  font-style: italic;
+  width: 30%;
+  height: 6vh;
+  border: 1px #1F4D36 solid;
+}
+.Body .Text .Buttons .button2 {
+  margin-left: 10%;
+  font-size: 20px;
+  font-style: italic;
+  color: #1F4D36;
+  border-radius: 25px;
+  width: 30%;
+  height: 6vh;
+  border: 1px #1F4D36 solid;
+}
+.Body .Text .Buttons .button2 img {
+  width: 15%;
+}
+.Body .Image {
+  height: 100%;
+}
+.Body .Image img {
+  width: 100%;
+  height: 85vh;
+  border-radius: 20px;
+}
+
+.Body2 {
+  font-size: 32px;
+  background-color: #1F4D36;
+  color: #F2F4EA;
+  padding-top: 5vh;
+  text-align: center;
+}
+.Body2 p {
+  font-size: 20px;
+  margin-bottom: 2vh;
+}
+.Body2 .gallery {
+  display: grid;
+  width: 80%;
+  margin-left: 10%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Body2 .gallery .gallery-item {
+  margin-top: 8vh;
+  font-size: 25px;
+}
+.Body2 .gallery .Learnmore {
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .nav2 #del {
+    display: none;
+  }
+  .nav2 button {
+    display: none;
+  }
+  .nav2 ul {
+    margin-left: 50%;
+  }
+  .Body {
+    grid-template-columns: 1fr;
+  }
+  .Body .Text .HealthCare h1 {
+    font-size: 85px;
+  }
+  .Body .Text .Buttons {
+    padding-top: 3vh;
+    padding-left: 0;
+  }
+  .Body .Text .Buttons .button1 {
+    border-radius: 25px;
+    width: 40%;
+    height: 6vh;
+    border: 1px #1F4D36 solid;
+  }
+  .Body .Text .Buttons .button2 {
+    border-radius: 25px;
+    width: 40%;
+    height: 6vh;
+  }
+  .Body .Text .Buttons .button2 img {
+    width: 10%;
+  }
+  .Body .Image {
+    display: none;
+  }
+  .Body2 {
+    font-size: 28px;
+    padding-top: 5vh;
+  }
+  .Body2 p {
+    font-size: 18px;
+    margin-bottom: 2vh;
+  }
+  .Body2 .gallery {
+    display: grid;
+    width: 80%;
+    margin-left: 10%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Body2 .gallery .gallery-item {
+    margin-top: 8vh;
+    font-size: 22px;
+  }
+  .Body2 .gallery .Learnmore {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

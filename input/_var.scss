@@ -1,0 +1,29 @@
+$green-color:#1F4D36;
+$white-color:#F2F4EA;
+$nav-font-size:20px;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: $white-color;
+}
+@mixin SetColor($bg-Color,$text-Color)
+{
+    background-color:$bg-Color ;
+    color:$text-Color;
+}
+@mixin SetWidthHeight($w,$h)
+{
+    width:$w;
+    height:$h;
+}
+@mixin SetTextColor($text-Color)
+{
+    color: $text-Color;
+}
+@mixin SetPaddingTL($Top,$Left)
+{
+    padding-top: $Top;
+    padding-left: $Left;
+}
